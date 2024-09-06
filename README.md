@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Acompanhamento de produção em uma indústria de manufatura de produtos
 
 ## Getting Started
 
-First, run the development server:
+Para rodar o projeto, você precisa ter o Node.js instalado na sua máquina. Você pode baixar o
+Node.js [aqui](https://nodejs.org/).
+
+Depois de instalar o Node.js, você pode clonar o repositório e instalar as dependências do projeto com o seguinte
+comando:
+
+```bash
+git clone https://github.com/HigorGrigorio/manufatura.git
+cd manufatura
+
+# Instalando dependências
+npm install
+# ou
+yarn # para quem usa yarn
+# ou
+pnpm install # para quem usa pnpm
+# ou
+bun install # para quem usa bun
+```
+
+Após instalar as dependências, você pode rodar o projeto com o seguinte comando:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# ou
+yarn dev # para quem usa yarn
+# ou
+pnpm dev # para quem usa pnpm
+# ou
+bun dev # para quem usa bun
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abra [http://localhost:3000](http://localhost:3000) no seu navegador para ver o resultado.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Estrutura de pastas
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `components`: Componentes React que são utilizados em mais de uma página.
+- `app`: Páginas da aplicação.
+- `context`: Contextos da aplicação.
+- `hooks`: Hooks customizados.
+- `lib`: Funções utilitárias.
+- `layouts`: Layouts da aplicação.
 
-## Learn More
+## Banco de dados
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Para este projeto foi utilizado um json como banco de dados. O arquivo `database.json` contém os dados utilizados na aplicação.
